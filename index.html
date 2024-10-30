@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/ek_logo.jpg">
+    <link rel="stylesheet" href="/css/ek_style.css">
+    <title>El Ahorcado</title>
+</head>
+
+<body>
+
+    <div class="ek_contenedor">
+        <h1>Juego de Ahorcado</h1>
+
+        <p id="ek_mensaje"></p>
+        <div class="ek_palabra_contenedor">
+            <span id="ek_palabra"></span>
+        </div>
+        <div class="ek_input-contenedor">
+            <label for="letra">Ingresa una letra:</label>
+            <input type="text" id="ek_letra" maxlength="1">
+            <button onclick="ek_adivinarLetra()">Adivinar</button>
+        </div>
+        <div class="ek_intentos">Intentos restantes: <span id="ek_intentos"></span></div>
+        <button class="ek_reiniciar" onclick="iniciarJuego()">Reiniciar Juego</button>
+
+        <div class="ek_boton_login">
+            <a href="/pages/ek_sesion.html" class="ek_boton">Iniciar Sesión</a>
+        </div>
+
+        <div class="ek_boton_jugadas">
+            <a href="ek_jugadas.php" class="ek_boton">Ver jugadas</a>
+        </div>
+
+    </div>
+
+    <script src="/script/ek_script.js"></script>
+
+</body>
+</html>
